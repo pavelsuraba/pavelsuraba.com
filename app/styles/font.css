@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'notcouriersans';
+    src: url('../fonts/notcouriersans/NotCourierSans-webfont.eot');
+    src: url('../fonts/notcouriersans/NotCourierSans-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/notcouriersans/NotCourierSans-webfont.woff') format('woff'),
+         url('../fonts/notcouriersans/NotCourierSans-webfont.ttf') format('truetype'),
+         url('../fonts/notcouriersans/NotCourierSans-webfont.svg#notcouriersansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}

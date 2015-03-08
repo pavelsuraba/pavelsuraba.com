@@ -1,0 +1,22 @@
+/*==========================================================================
+  Variables
+  ========================================================================== */
+
+/* Colors */
+$white: #f8f8f8;
+$grey--dark: #333;
+$grey: #eeeeee;
+$spring-green: #00FF7F;
+
+$body-background: $white;
+$body-text: $grey--dark;
+
+$selection: $spring-green;
+
+$form-bg-color: $grey;
+$form-border-color: $spring-green;
+$form-placeholder-font-color: $grey--dark;
+
+$btn-bg: $spring-green;
+$btn-text: $white;
+$btn-bg-hover: darken($spring-green, 5%);

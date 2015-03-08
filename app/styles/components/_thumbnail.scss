@@ -1,0 +1,17 @@
+/*==========================================================================
+  Buttons
+  ========================================================================== */
+
+.thumbnail {
+  display: block;
+  width: 150px;
+  height: auto;
+  margin: 0 auto;
+  border-radius: 50%;
+  margin-bottom: 1.5rem;
+  transition: all 350ms;
+
+  @include bp(35em) {  //560px
+    width: 250px;
+  }
+}

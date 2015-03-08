@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="cs">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="pavelsuraba.com - cv">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pavel Šuraba - CV</title>
+
+    <link rel="icon" type="image/png" href="/favicon.png" sizes="32x32">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon.png">
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+
+    <script>
+      function loadCSS( href, before, media ){
+        "use strict";
+        var ss = window.document.createElement( "link" );
+        var ref = before || window.document.getElementsByTagName( "script" )[ 0 ];
+        ss.rel = "stylesheet";
+        ss.href = href;
+        ss.media = "only x";
+        ref.parentNode.insertBefore( ss, ref );
+        setTimeout( function(){
+            ss.media = media || "all";
+        } );
+        return ss;
+       }
+      loadCSS( "styles/font.css" );
+    </script>
+  </head>
+
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+  <div class="container">
+    <section>
+      <h1 class="text--center">Pavel Šuraba</h1>
+
+      <img class="thumbnail" src="images/face150.jpg" alt="picture of my face"
+     sizes="(min-width: 80em) 15vw , (min-width: 65em) 25vw ,(min-width: 40em) 33.3vw , 50vw"
+     srcset="images/face150.jpg 150w,
+             images/face250.jpg 250w,
+             images/face450.jpg 450w">
+
+      <h2>Narození:</h2>
+      <p class="text--hang">*1988 - Mariánské Lázně</p>
+      <h2>Vzdělání:</h2>
+      <p>SOŠ Cheb 2004 - 2008</p>
+      <h2>O mně:</h2>
+      <p>Od roku 2010 žiji v Praze , kam jsem se odstěhoval za prací. Pracuji v projektové činnosti ve stavebnictví.</p>
+      <hr>
+    </section>
+
+    <section>
+      <h3>Frontend developer/koder</h3>
+      <p>Oboru se věnuji cca. 3 roky, doposud jako hobby ve volném čase. Nastal pro mě čas posunout se o kus dál a věnovat full-time tomu co mě baví. Hledám tým kde budu moct růst a sbírat zkušenosti.</p>
+      <p>Sleduji moderní trendy, preferuji vývoj mobile first s důrazem na performance a UX. Jsem pečlivý, spolehlivý a umím dobře anglicky.</p>
+      <p>Baví mě design , do budoucna se chci zabývat nejen vývojem , ale i návrhem UI.</p>      
+    </section>
+
+    <section>
+      <h3>Co umím:</h3>
+        <ul>
+          <li>HTML5</li>
+          <li>CSS3 - sass/less (OOCSS + BEM naming convention) -> modulárnost</li>
+          <li>Responsive design</li>
+          <li>Javascript - jquery</li>
+          <li>Javascript - AngularJS (základy)</li>
+          <li>Tooling - gulp/grunt</li>
+          <li>Git</li>  
+          <li>PHP (základy) - MVC architektura</li>
+        </ul>      
+    </section>
+
+    <section>
+      <h3>Reference:</h3>
+      <article>
+        <a href="http://marketamonroe-photography.com/" target="blank">marketamonroe-photography.com</a><br>
+        <a href="https://github.com/pavelsuraba/marketamonroe-photography.com" target="blank">source@github</a>
+      </article>
+
+      <article>
+        <a href="http://cvicimeqigong.cz/" target="blank">cvicimeqigong.cz</a><br>
+        <a href="https://github.com/pavelsuraba/cvicimeqigong.cz" target="blank">source@github</a>
+      </article>
+
+      <article>
+        <a href="http://gaiatherapy.cz/" target="blank">gaiatherapy.cz</a><br>
+        <a href="https://github.com/pavelsuraba/gaiatherapy.cz" target="blank">source@github</a>
+      </article>
+
+      <p>Děkuji pokud jste dočetli až sem. Pokud máte zájem se mnou spolupracovat využijte kontaktní údaje níže, nebo použijte formulář který jsem pro Vás připravil.</p>
+      <p>Děkuji za pozornost , budu se těšit na případné shledání.</p>    
+    </section>
+
+    <section>
+      <h3>Kontakt:</h3>
+        <div class="row">
+          <div class="col">
+            <h4>Email</h4>
+            <p>suraba.pavel@gmail.com</p>
+          </div>
+
+          <div class="col">
+            <h4>Telefon</h4>
+            <p>736 14 13 74</p>
+          </div>
+
+          <div class="col">
+            <h4>Twitter</h4>
+            <p><a href="https://twitter.com/pavelsuraba" target="blank">@pavelsuraba</a></p>
+          </div>
+        </div>             
+    </section>
+  </div><!-- /container -->
+
+  
+  <div class="container--form">
+    <section>
+      <form class="form" action="contact-form-handler-czech.php" name="contactform" method="POST" autocomplete="on">
+
+        <div class="label-float">
+            <label for="name" class="form__label">Jméno/firma:</label>
+            <input class="form__input form__input--text" type="text" name="name" placeholder="Jméno/firma:" required>
+        </div>
+
+        <div class="label-float">
+            <label for="name" class="form__label">Email:</label>
+            <input class="form__input form__input--email" type="email" name="email" input="email" placeholder="Email:" required> 
+        </div>
+
+        <div class="label-float">
+            <label for="name" class="form__label">Zpráva:</label>
+            <textarea class="form__input form__input--textarea" name="message" placeholder="Zpráva:"></textarea>
+        </div>
+          
+       <input class="form__input--submit" type="submit" value="Odeslat">
+      </form>        
+    </section>
+  </div><!-- /container-form -->
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-37082825-2', 'auto');
+    ga('send', 'pageview');
+  </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+</body>
+</html>

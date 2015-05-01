@@ -1,0 +1,50 @@
+/*==========================================================================
+  Grid
+  ========================================================================== */
+
+$grid-pad: 1rem;
+
+%container {
+  margin: 0 auto;
+  padding: 0 $grid-pad 0 $grid-pad;
+}
+
+.container {
+  @extend %container;
+  max-width: 48rem; // 960px
+}
+
+.container--form {
+  @extend %container;
+  max-width: 38rem; // 760px
+}
+
+.row {
+  margin-right: -($grid-pad/2);
+  margin-left: -($grid-pad/2);
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+%column {
+  padding: 0 ($grid-pad/2) 0 ($grid-pad/2);
+  width: 100%;
+}
+
+.col {
+
+  @extend %column;
+
+  @include bp(35em) { //560px
+    float: left;
+    width: 50%;
+  }
+
+  @include bp(54em) { //560px
+    width: 33%;
+  }
+}

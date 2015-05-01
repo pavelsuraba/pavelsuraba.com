@@ -17,16 +17,18 @@
  */
 
 /* Base imports */
-@import "base/variables";
-@import "base/mixins";
-@import "base/base";
-@import "base/typography";
-@import "base/grid";
+@import "main/base/variables";
+@import "main/base/mixins";
+@import "main/base/base";
+@import "main/base/typography";
+@import "main/base/grid";
 
 /* Components imports */
-@import "components/buttons";
-@import "components/thumbnail";
-@import "components/form";
-/* Layout imports */
+@import "main/components/buttons";
+@import "main/components/form";
+@import "main/components/social-icons";
 
-@import "base/utility";
+/* Layout imports */
+@import "main/layout/main-page";
+
+@import "main/base/utility";

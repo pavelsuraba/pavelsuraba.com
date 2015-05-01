@@ -1,0 +1,21 @@
+/*==========================================================================
+  Buttons
+  ========================================================================== */
+
+
+$btn-height: 3rem;
+
+%btn {
+  display: block;
+  height: $btn-height;
+  padding: 0 1rem;
+  background: $btn-bg;
+  color: $btn-text;
+  font-size: 1rem;
+  line-height: $btn-height;
+
+
+  &:hover {
+    background: $btn-bg-hover;
+  }
+}

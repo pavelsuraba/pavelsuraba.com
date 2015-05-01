@@ -1,0 +1,28 @@
+/*==========================================================================
+  Social icons
+  ========================================================================== */
+
+.social {
+  text-align: center;
+}
+
+.social__item {
+  display: inline-block;
+  padding: 0 10px;
+
+}
+  
+.icon {
+  width: 40px;
+  height: 40px;
+  fill: $grey--dark2;
+
+  &:hover {
+    fill: $grey--dark;
+  }
+
+  @include bp(35em) { //960px
+    width: 55px;
+    height: 55px;
+  }
+}
